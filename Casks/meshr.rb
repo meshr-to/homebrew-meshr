@@ -1,10 +1,10 @@
 cask "meshr" do
-  version "0.4.12"
-  sha256 "7328a8000aa5fd1ad5e3228b958eee56e8fb8bf719ca67f4d99d45bab5098174"
+  version "0.4.18"
+  sha256 "beff35c24278bdc9e2de310f734cbde7ff59722f264a8ded7675e8688f37579a"
 
-  url "https://releases.meshr.to/v0.4.12/Meshr-v0.4.12-macOS.dmg"
+  url "https://releases.meshr.to/v#{version}/Meshr-v#{version}-macOS.dmg"
   name "Meshr"
-  desc "WireGuard-based mesh networking — GUI, CLI, and daemon"
+  desc "WireGuard-based mesh networking — CLI, daemon, and menubar tray"
   homepage "https://meshr.to"
 
   app "Meshr.app"
