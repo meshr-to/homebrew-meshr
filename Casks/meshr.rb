@@ -15,7 +15,9 @@ cask "meshr" do
     system_command "/bin/ln", args: ["-sf", "#{appdir}/Meshr.app/Contents/MacOS/meshr-daemon", "/usr/local/bin/meshr-daemon"], sudo: true
   end
 
-  uninstall quit: "to.meshr.app"
+  uninstall quit:    "to.meshr.app",
+            signal:  ["TERM", "meshr-tray"],
+            pkgutil: "to.meshr.*"
 
   zap trash: [
     "~/Library/Application Support/Meshr",
