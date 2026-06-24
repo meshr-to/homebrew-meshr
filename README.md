@@ -1,19 +1,25 @@
 # Homebrew Tap — Meshr
 
-WireGuard-based mesh networking agent for macOS.
+Zero-trust WireGuard mesh for your devices, SSH, and services — macOS app.
 
 ## Install
 
 ```bash
-brew tap meshr-to/meshr
+brew install --cask meshr-to/tap/meshr
+```
+
+Or tap first, then install:
+
+```bash
+brew tap meshr-to/tap
 brew install --cask meshr
 ```
 
 ## What's included
 
-- **Meshr.app** — Desktop GUI with system tray
-- **meshr** — CLI tool (`/usr/local/bin/meshr`)
-- **meshr-daemon** — Background daemon (`/usr/local/bin/meshr-daemon`)
+- **Meshr.app** — desktop app with menubar control (notarized; the
+  background daemon is registered via the system on first launch)
+- **meshr** — CLI tool, symlinked to `/usr/local/bin/meshr`
 
 ## Usage
 
